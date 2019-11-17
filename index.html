@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <title>Jon Jackson - web developer</title>
@@ -8,75 +9,81 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
+
 <body>
     <!-- Nav Bar W/ Toggling Hamburger Menu -->
-    <div class="nav">
+    <nav class="nav">
         <span>Jon Jackson</span>
         <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
+        <input type="checkbox" id="toggle" />
         <div class="menu">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-            
+            <a href="#about-me-section">About</a>
+            <a href="#project-section">Projects</a>
+            <a href="#contact-section">Contact</a>
         </div>
-    </div> 
+    </nav>
     <!-- End Nav Bar-->
-    
     <main role="main">
-        <header role="banner">
-        <img class="profile" src="jon_pic.jpg" alt="Jon Jackson" height="220" width="220">
-        <h1>About Me</h1>
-        <p class="about-me">I am a web developer and recent graduate of the Engineering Immersion Program through Thinkful.  Coding is a great career fit for me because I thoroughly enjoy creating and researching solutions that bring life to new and existing ideas.
-        <br><br>
-        I am a creative person, whether through coding or through my passion of music. I hold a Bachelor of Arts Degree in Music Education and a Master of Arts in Music Composition.  I am a percussionist and enjoy playing all genres of music, as well as creating my own compositions and seeing them come to life.
-        <br><br>  
-        Please feel free to browse through my projects or to contact me by using the links below.</p>
-        </header>
-  <!-- PROJECTS -->
-  <div class="projects">
-      <h2>Projects</h2>
-      <img class="project-pic" src="mustheoryquizpic.png" alt="Music Theory Quiz App Screenshot">
-      <p class="project-description">The AP Music Theory Quiz App is a multiple choice quiz app for high school AP Music Theory students. Each question appears with a musical example and provides feedback on student achievement as the quiz progresses. This project utilized HTML, CSS, JavaScript, and JQuery.</p>
-    <!-- Live Link and GitHub Repo Link-->
-    <div class="links"> 
-    <a class="project-link" href="#">Link</a>
-      <span>|</span>
-      <a class="github-link" href="https://github.com/thinkful-ei-iguana/Jon-and-Calvin">GitHub</a>
-    </div> 
-  </div>
-  <!-- END PROJECTS -->
-
-  <!-- CONTACT INFO -->
-    <h3>Contact</h3>
-    <p class="contact-description">You can reach me by email at <A HREF="mailto:jonathanjackson424@gmail.com">jonathanjackson424@gmail.com</A>, or by filling out this contact form! Also, please find my GitHub and LinkedIn profile pages below the form.  </p>
-<!--CONTACT FORM --> 
-    <div class="contact-form">
-        <form class="form-container"action="/my-handling-form-page" method="post">
-            <div>
-                <label class="name" for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
+        <section id="about-me-section">
+            <header role="banner">
+                <img class="profile" src="jon_pic.jpg" alt="Jon Jackson" height="220" width="220">
+                <h1>About Me</h1>
+                <p class="about-me">I am a web developer and recent graduate of the Engineering Immersion Program through Thinkful. Coding is a great career fit for me because I thoroughly enjoy creating and researching solutions that bring life to new and existing ideas.
+                    <br>
+                    <br> I am a creative person, whether through coding or through my passion for music. I hold a Bachelor of Arts Degree in Music Education and a Master of Arts in Music Composition. I am a percussionist and enjoy playing all genres of music, as well as creating my own compositions and seeing them come to life.
+                    <br>
+                    <br> I am excited about working on a team with other developers and designers. Please feel free to browse through my projects or to contact me by using the links below.
+                </p>
+            </header>
+        </section>
+        <!-- PROJECTS -->
+        <section class="projects" id="project-section">
+            <h2>Projects</h2>
+            <img class="project-pic" src="mustheoryquizpic.png" alt="Music Theory Quiz App Screenshot">
+            <p class="project-description">The AP Music Theory Quiz App is a multiple choice quiz app for high school AP Music Theory students. Each question appears with a musical example and provides feedback on student achievement as the quiz progresses. This project utilized HTML, CSS, JavaScript, and JQuery.</p>
+            <!-- Live Link and GitHub Repo Link-->
+            <div class="links">
+                <a class="project-link" target="_blank" href="https://thinkful-ei-iguana.github.io/Jon-and-Calvin/">Link</a>
+                <span>|</span>
+                <a class="github-link" target="_blank" href="https://github.com/thinkful-ei-iguana/Jon-and-Calvin">GitHub Repo</a>
             </div>
-            <div>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_mail">
-            </div>
-            <div>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-            </div>
-            <div class="button">
-                <button type="submit">Send your message</button>
-            </div>
-        </form>
-        <!--END CONTACT FORM -->
-        
-        <!--GITHUB AND LINKEDIN LINKS--> 
-        <span><a class="github-profile" href="https://github.com/jon424"><img id ="githubimg" src="Octocat.png" alt="Link To Github Profile" width="60px" height="45px"></a><span class="space">  </span><a class="linkedin-profile" href="https://www.linkedin.com/in/jonjackson424"><img id="linkedinimg" src="LI-Logo.png" alt="Link To LinkedIn Profile" width="95px" height="45px"></a></span>
-    </div>
+        </section>
+        <!-- END PROJECTS -->
+        <!-- CONTACT INFO -->
+        <section class="contact" id="contact-section">
+            <h3>Contact</h3>
+            <p class="contact-description">You can reach me by email at
+                <A HREF="mailto:jonathanjackson424@gmail.com">jonathanjackson424@gmail.com</A>! Also, please find my GitHub and LinkedIn profile pages at these links: </p>
+            <!--CONTACT FORM -->
+            <!--
+         <section class="contact-form">
+            <form class="form-container"action="jonathanjackson424@gmail.com" method="post">
+               <div>
+                  <label class="name" for="name">Name:</label>
+                  <input type="text" id="name" name="user_name">
+               </div>
+               <div>
+                  <label for="mail">E-mail:</label>
+                  <input type="email" id="mail" name="user_mail">
+               </div>
+               <div>
+                  <label for="msg">Message:</label>
+                  <textarea id="msg" name="user_message"></textarea>
+               </div>
+               <div class="button">
+                  <button type="submit">Send your message</button>
+               </div>
+            </form> -->
+            <!--END CONTACT FORM -->
+            <!--GITHUB AND LINKEDIN LINKS-->
+            <span><a class="github-profile" href="https://github.com/jon424" target="_blank"><img id ="githubimg" src="Octocat.png" alt="Link To Github Profile"></a><span class="space">  </span>
+            <a class="linkedin-profile" href="https://www.linkedin.com/in/jonjackson424" target="_blank"><img id="linkedinimg" src="LI-Logo.png" alt="Link To LinkedIn Profile"></a>
+            </span>
+        </section>
 
     </main>
-
-    <footer role="content-info"><span>Site designed by Jon Jackson. </span><a href="Contact Page Link">Contact me here!</a></footer>
+    <footer role="content-info">
+        <span>Site designed by Jon Jackson</span>
 </body>
+
 </html>
